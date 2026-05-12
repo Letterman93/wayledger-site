@@ -489,7 +489,7 @@ details {
 .price-card {
   position: relative;
   display: grid;
-  grid-template-rows: 38px 96px 64px 1fr auto;
+  grid-template-rows: 38px 96px 78px 1fr auto;
   min-height: 475px;
   padding: 44px 42px 34px;
 }
@@ -530,7 +530,31 @@ details {
   color: var(--gold);
   font-style: normal;
 }
+.crossed-price {
+  position: relative;
+  display: inline-block;
+  opacity: .72;
+}
+.crossed-price::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: 52%;
+  height: 3px;
+  transform: rotate(-7deg);
+  border-radius: 999px;
+  background: var(--gold);
+}
+.price-line small .crossed-price::after {
+  height: 2px;
+}
 .price-card.featured .price-line, .price-card.featured .price-line small, .price-card.featured p, .price-card.featured li { color: #fff; }
+.price-card:not(.featured) .price-line small {
+  border-color: var(--line);
+  color: var(--green);
+  background: rgba(255,253,248,.74);
+}
 .price-card.featured .price-line small { background: rgba(255,255,255,.08); }
 .price-card > p {
   align-self: start;
