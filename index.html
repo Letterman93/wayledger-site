@@ -94,55 +94,27 @@
       </section>
 
       <section id="product" class="section product-section">
-        <div class="product-preview" aria-label="Wayledger dashboard preview">
-          <div class="preview-sidebar">
-            <img src="/assets/icons/brand/wayledger-logo-white.png" alt="" />
-            <div class="active"></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <figure class="product-preview" aria-label="Wayledger dashboard preview">
+          <div class="monitor-frame">
+            <div class="monitor-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+            <img src="/assets/images/product/desktop.jpeg" alt="Wayledger dashboard showing cash flow, scheduled bills, spending categories, debt pressure, savings goals, and recent activity." />
           </div>
-          <div class="preview-main">
-            <div class="preview-top">
-              <strong>Current Cycle</strong>
-              <span>Pay Window 2</span>
-              <small>14 days remaining</small>
-            </div>
-            <div class="preview-grid">
-              <div class="preview-card summary">
-                <span>Remaining Cash</span>
-                <strong>$850</strong>
-                <small>Projected cushion</small>
-              </div>
-              <div class="preview-card flow">
-                <span>Cash Flow Overview</span>
-                <div class="mini-sankey">
-                  <i></i><i></i><i></i><i></i>
-                </div>
-              </div>
-              <div class="preview-card schedule">
-                <span>Upcoming Scheduled</span>
-                <strong>$625</strong>
-                <small>Campground site fee</small>
-              </div>
-            </div>
-          </div>
-        </div>
+          <figcaption>Desktop dashboard preview. Tablet and mobile layouts are being tuned for early testers.</figcaption>
+        </figure>
         <div class="section-copy">
           <p class="eyebrow">The Product</p>
-          <h2>A hosted web dashboard first. Native apps later.</h2>
+          <h2>A clear cash flow dashboard for life between paydays.</h2>
           <p>
-            Wayledger will start as a responsive web app that works across desktop, tablet, and phone. That keeps the first launch simpler, cheaper, and faster to test with real users.
+            Wayledger starts as a responsive web app for desktop, tablet, and phone. It brings income, scheduled bills, debt pressure, savings goals, and trip-related costs into one practical view.
           </p>
           <ul class="plain-list">
-            <li>Cash flow dashboard</li>
-            <li>Scheduled bills and recurring items</li>
-            <li>Debt pressure and next payment visibility</li>
+            <li>Cash flow and pay-window visibility</li>
+            <li>Scheduled bills and recurring expenses</li>
+            <li>Debt pressure and next-payment context</li>
             <li>Savings goals and travel-aware categories</li>
           </ul>
         </div>
       </section>
-
       <section class="section workflow-section">
         <div class="section-copy">
           <p class="eyebrow">How Access Will Work</p>
@@ -230,24 +202,92 @@
       <section id="faq" class="section faq-section">
         <div class="section-copy">
           <p class="eyebrow">FAQ</p>
-          <h2>What people will want to know.</h2>
+          <h2>Questions people ask before joining.</h2>
         </div>
         <div class="faq-list">
           <details open>
-            <summary>Is Wayledger a mobile app?</summary>
-            <p>Not at first. The first version will be a hosted web app that works across devices. Native apps can come later if users need them.</p>
+            <summary>What is Wayledger?</summary>
+            <p>Wayledger is a finance app for people who travel, live on the road, or manage expenses across changing locations. It helps organize income, spending, bills, debt, savings goals, and trip-related costs in one dashboard.</p>
           </details>
           <details>
-            <summary>Will it connect to banks?</summary>
-            <p>Bank connections are a later decision. The first version should prove the planning workflow before adding cost and complexity.</p>
+            <summary>Who is Wayledger for?</summary>
+            <p>Wayledger is designed for RV families, full-time travelers, digital nomads, and households whose budgets shift with fuel, campground stays, repairs, subscriptions, and irregular expenses.</p>
           </details>
           <details>
-            <summary>Can the public website be hosted for free?</summary>
-            <p>Yes. The landing page can be hosted as a static site on GitHub Pages. Early-access collection can be handled with Google Forms, and contact mail can forward from hello@getwayledger.com.</p>
+            <summary>How is Wayledger different from a normal budgeting app?</summary>
+            <p>Most budgeting apps assume fixed monthly spending. Wayledger is built around travel life, where costs change by route, campground, fuel prices, repairs, memberships, groceries, and pay cycles.</p>
           </details>
           <details>
-            <summary>When will subscriptions be available?</summary>
-            <p>After tester feedback confirms the core workflows and the app has secure accounts, database setup, and support processes in place.</p>
+            <summary>Does Wayledger help with pay periods or monthly budgets?</summary>
+            <p>Yes. Wayledger is designed around cash flow windows, so you can see what is coming in, what is already committed, what is flexible, and what should remain before the next income date.</p>
+          </details>
+          <details>
+            <summary>Can I track upcoming bills and scheduled expenses?</summary>
+            <p>Yes. Scheduled items can include campground fees, truck payments, insurance, mobile internet, memberships, subscriptions, propane refills, and other recurring or planned costs.</p>
+          </details>
+          <details>
+            <summary>Does Wayledger track RV-specific expenses?</summary>
+            <p>Yes. Wayledger can organize site fees, fuel, propane, mobile internet, insurance, maintenance, repairs, memberships, and travel supplies alongside everyday spending.</p>
+          </details>
+          <details>
+            <summary>Can I track debt payments?</summary>
+            <p>Yes. Wayledger includes debt tracking so you can monitor upcoming minimum payments, total monthly debt pressure, and how debt payments affect available cash.</p>
+          </details>
+          <details>
+            <summary>What does debt pressure mean?</summary>
+            <p>Debt pressure shows how much of your cash flow is being pulled toward debt payments. It helps you quickly understand whether obligations are manageable or starting to limit flexibility.</p>
+          </details>
+          <details>
+            <summary>Can I track savings goals?</summary>
+            <p>Yes. You can track goals like an emergency fund, travel reserve, maintenance reserve, future homestead fund, or any other goal you want to build over time.</p>
+          </details>
+          <details>
+            <summary>Does Wayledger connect to my bank account?</summary>
+            <p>Not yet. The plan for the live version is to support linked accounts when the product is ready. Wayledger should still be useful whether you enter transactions manually, import data, or connect accounts later.</p>
+          </details>
+          <details>
+            <summary>Can I manually add transactions?</summary>
+            <p>Yes. Wayledger is built to support manual entry for expenses, income, transfers, and planned payments without requiring a bank connection.</p>
+          </details>
+          <details>
+            <summary>Can I categorize spending?</summary>
+            <p>Yes. You can organize spending into categories like fuel, groceries, campground fees, dining, propane, entertainment, insurance, repairs, debt payments, subscriptions, and custom categories.</p>
+          </details>
+          <details>
+            <summary>Does Wayledger show where my money is going?</summary>
+            <p>Yes. The dashboard shows spending by category, recent activity, upcoming scheduled expenses, and cash flow so you can quickly see what is using the most money.</p>
+          </details>
+          <details>
+            <summary>What is the cash flow view?</summary>
+            <p>The cash flow view shows how income is split between committed expenses, flexible spending, savings, reserves, and remaining cash.</p>
+          </details>
+          <details>
+            <summary>Can Wayledger help me avoid running out of money before the next paycheck?</summary>
+            <p>Yes. Wayledger shows remaining cash, upcoming bills, projected cushion, and runway so you can see whether your current spending pace is safe before the next income date.</p>
+          </details>
+          <details>
+            <summary>Can I use Wayledger if I am not an RVer?</summary>
+            <p>Yes. Wayledger is especially useful for RVers and travelers, but it can also help anyone planning trips, vacations, seasonal expenses, or household cash flow around specific dates and goals.</p>
+          </details>
+          <details>
+            <summary>Is Wayledger for business or personal use?</summary>
+            <p>Wayledger is mainly designed for personal and household finance, especially for travel-based lifestyles. Future versions may support more advanced business or tax-focused features.</p>
+          </details>
+          <details>
+            <summary>Can I plan trips inside Wayledger?</summary>
+            <p>Wayledger is not meant to replace a full trip planner. Its trip features focus on the money side of travel, including campground costs, fuel estimates, travel spending, and location-based expenses.</p>
+          </details>
+          <details>
+            <summary>Can I use Wayledger on my phone?</summary>
+            <p>Yes. Wayledger is designed for desktop, tablet, and mobile layouts so you can check your finances from home, the truck, the campground, or wherever you are.</p>
+          </details>
+          <details>
+            <summary>Is my financial information secure?</summary>
+            <p>Wayledger is being designed with privacy and security in mind. Sensitive financial data should be handled carefully, and account connection features should use secure third-party providers when available.</p>
+          </details>
+          <details>
+            <summary>Is Wayledger available yet?</summary>
+            <p>Wayledger is currently in development. Early access, waitlist, and launch details will be shared as the app gets closer to release.</p>
           </details>
         </div>
       </section>
