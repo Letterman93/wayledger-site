@@ -5,90 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Wayledger is a cash flow planning dashboard for RV families and mobile households. Track pay windows, bills, site fees, debt, savings, and travel costs in one web app."
+      content="Wayledger helps RV families and frequent travelers plan around paydays, bills, campground fees, fuel, repairs, debt, savings, and travel costs."
     />
-    <title>Wayledger | Cash flow for life on the road</title>
-    <link rel="icon" type="image/png" href="/assets/icons/brand/wayledger-logo.png" />
-    <link rel="apple-touch-icon" href="/assets/icons/brand/wayledger-logo.png" />
+    <title>Wayledger | Cash flow planning for life on the road</title>
+    <link rel="icon" type="image/png" href="./assets/icons/brand/wayledger-logo.png" />
+    <link rel="apple-touch-icon" href="./assets/icons/brand/wayledger-logo.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header" aria-label="Wayledger navigation">
       <a class="brand" href="#top" aria-label="Wayledger home">
-        <img src="/assets/icons/brand/wayledger-logo-white.png" alt="Wayledger" />
+        <img src="./assets/icons/brand/wayledger-logo-white.png" alt="Wayledger" />
       </a>
       <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
       <nav class="site-nav">
-        <a href="#problem">Why Wayledger</a>
-        <a href="#product">Product</a>
-        <a href="#plans">Plans</a>
+        <a href="#why">Why Wayledger</a>
+        <a href="#how">How It Works</a>
+        <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
-        <a class="nav-login" href="#early-access">Log In</a>
+        <a class="nav-pill" href="#early-access">Early Access</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero-section">
         <div class="hero-bg" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Cash flow planning for RV families</p>
-          <h1>Your journey. Organized. Funded. Freedom.</h1>
-          <p class="hero-copy">
-            Wayledger helps mobile households understand what is committed, what is flexible, what is left, and how long it needs to last.
-          </p>
-          <div class="hero-actions">
-            <a class="primary-button" href="#early-access">Request Early Access</a>
-            <a class="secondary-button" href="#product">Preview the Dashboard</a>
+        <div class="hero-wrap">
+          <div class="hero-copy-block">
+            <p class="eyebrow">Cash flow planning for life on the road</p>
+            <h1>Stop guessing if the next stop fits the budget.</h1>
+            <p class="hero-copy">
+              Wayledger helps RV families and frequent travelers plan around paydays, bills, campground fees, fuel, repairs, debt, and savings so they know what is actually safe to spend.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#early-access">Request Early Access</a>
+              <a class="secondary-button play-button" href="#how"><span aria-hidden="true"></span> See How It Works</a>
+            </div>
+            <div class="trust-row" aria-label="Wayledger planning focus">
+              <span><img class="site-icon chip-icon" src="./assets/icons/ui/paydays.svg" alt="" aria-hidden="true" />Paydays</span>
+              <span><img class="site-icon chip-icon" src="./assets/icons/ui/bills-expenses.svg" alt="" aria-hidden="true" />Bills</span>
+              <span><img class="site-icon chip-icon" src="./assets/icons/ui/campgrounds.svg" alt="" aria-hidden="true" />Campgrounds</span>
+              <span><img class="site-icon chip-icon" src="./assets/icons/ui/fuel.svg" alt="" aria-hidden="true" />Fuel</span>
+              <span><img class="site-icon chip-icon" src="./assets/icons/ui/repairs.svg" alt="" aria-hidden="true" />Repairs</span>
+              <span><img class="site-icon chip-icon" src="./assets/icons/ui/debt.svg" alt="" aria-hidden="true" />Debt</span>
+              <span><img class="site-icon chip-icon" src="./assets/icons/ui/savings.svg" alt="" aria-hidden="true" />Savings</span>
+            </div>
           </div>
-          <div class="trust-row" aria-label="Product focus">
-            <span>Pay windows</span>
-            <span>Site fees</span>
-            <span>Debt pressure</span>
-            <span>Travel costs</span>
-          </div>
+
+          <aside class="period-card" aria-label="Example pay period calendar">
+            <div class="period-head">
+              <strong>This Pay Period</strong>
+              <span>14 days remaining</span>
+            </div>
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+            <div class="calendar-grid hero-calendar">
+              <span class="muted-day">27</span><span class="muted-day">28</span><span class="muted-day">29</span><span class="muted-day">30</span><span>1</span><span>2</span><span>3</span>
+              <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+              <span>11</span><span>12</span><span>13</span><span>14</span><span class="payday">15</span><span>16</span><span>17</span>
+              <span class="window-day bill-day">18</span><span class="window-day bill-day">19</span><span class="window-day bill-day">20</span><span class="window-day">21</span><span class="window-day bill-day">22</span><span class="window-day">23</span><span class="window-day">24</span>
+              <span class="window-day">25</span><span class="window-day">26</span><span class="window-day bill-day">27</span><span class="window-day">28</span><span class="window-day">29</span><span class="window-day bill-day">30</span><span class="window-day">31</span>
+            </div>
+            <div class="period-stats">
+              <div><span>Income</span><strong>$5,450</strong></div>
+              <div><span>Scheduled</span><strong class="warn">$2,880</strong></div>
+              <div><span>Cushion</span><strong>$2,570</strong></div>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <section id="problem" class="section split-section">
+      <section id="why" class="section why-section">
         <div class="section-copy">
-          <p class="eyebrow">Why It Exists</p>
-          <h2>Regular budgeting apps do not understand road-life timing.</h2>
+          <img class="site-icon section-icon" src="./assets/icons/ui/mountains.svg" alt="" aria-hidden="true" />
+          <p class="eyebrow">Why Wayledger</p>
+          <h2>Travel budgets need more than a monthly total.</h2>
           <p>
-            A monthly budget is useful, but RV families also need to know how each payday supports the next stretch of bills, campground fees, travel days, debt payments, and savings goals.
+            Normal monthly budgets do not show whether the next stretch of campground costs, fuel, groceries, bills, and repairs fit before the next payday. Wayledger shows what is actually safe to spend.
           </p>
         </div>
-        <div class="proof-panel">
-          <div>
-            <span>Current Cycle</span>
-            <strong>May Cash Flow</strong>
+        <div class="compare-card" aria-label="Budget app comparison">
+          <div class="compare-divider" aria-hidden="true"></div>
+          <div class="compare-column muted-compare">
+            <h3>Normal Budget Apps</h3>
+            <ul>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/cross-circle.svg" alt="" aria-hidden="true" />Monthly category totals</li>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/cross-circle.svg" alt="" aria-hidden="true" />Generic categories</li>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/cross-circle.svg" alt="" aria-hidden="true" />Shows what you spent</li>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/cross-circle.svg" alt="" aria-hidden="true" />Doesn't match your pay cycle</li>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/cross-circle.svg" alt="" aria-hidden="true" />Hard to plan travel costs</li>
+            </ul>
           </div>
-          <div>
-            <span>Active Pay Window</span>
-            <strong>May 16 - May 31</strong>
-          </div>
-          <div>
-            <span>Projected Cushion</span>
-            <strong>$850</strong>
+          <div class="vs-badge">vs.</div>
+          <div class="compare-column good-compare">
+            <h3>Wayledger</h3>
+            <ul>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/check-circle.svg" alt="" aria-hidden="true" />Pay-period cash flow</li>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/check-circle.svg" alt="" aria-hidden="true" />Campgrounds, fuel, repairs, travel costs</li>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/check-circle.svg" alt="" aria-hidden="true" />Shows what is safe to spend next</li>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/check-circle.svg" alt="" aria-hidden="true" />Built around your paydays</li>
+              <li><img class="site-icon compare-mark" src="./assets/icons/ui/check-circle.svg" alt="" aria-hidden="true" />Made for life on the road</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="section feature-section">
-        <div class="feature-grid">
+        <div class="feature-grid three-up">
           <article>
-            <span>01</span>
+            <img class="site-icon feature-icon-img" src="./assets/icons/ui/calendar.svg" alt="" aria-hidden="true" />
             <h3>Plan by cycle and pay window</h3>
-            <p>See the full month while focusing on the pay window that funds the next set of decisions.</p>
+            <p>See the full month while focusing on what matters most between paydays.</p>
           </article>
           <article>
-            <span>02</span>
-            <h3>See the flow of every dollar</h3>
-            <p>A Sankey-style dashboard shows income, committed spending, flexible spending, savings, and remaining cash.</p>
+            <img class="site-icon feature-icon-img" src="./assets/icons/ui/checklist.svg" alt="" aria-hidden="true" />
+            <h3>See what is already spoken for</h3>
+            <p>Upcoming bills, debt payments, savings goals, and trips are accounted for.</p>
           </article>
           <article>
-            <span>03</span>
+            <img class="site-icon feature-icon-img" src="./assets/icons/ui/rv.svg" alt="" aria-hidden="true" />
             <h3>Bring travel into the budget</h3>
-            <p>Track site fees, fuel, propane, memberships, maintenance, and other RV-specific costs next to normal expenses.</p>
+            <p>Track campgrounds, fuel, repairs, and travel days so there are no surprises.</p>
           </article>
         </div>
       </section>
@@ -97,89 +135,163 @@
         <figure class="product-preview" aria-label="Wayledger dashboard preview">
           <div class="monitor-frame">
             <div class="monitor-bar" aria-hidden="true"><span></span><span></span><span></span></div>
-            <img src="/assets/images/product/desktop.jpeg" alt="Wayledger dashboard showing cash flow, scheduled bills, spending categories, debt pressure, savings goals, and recent activity." />
+            <img src="./assets/images/product/desktop.jpeg" alt="Wayledger dashboard showing cash flow, scheduled bills, spending categories, debt pressure, savings goals, and recent activity." />
           </div>
-          <figcaption>Desktop dashboard preview. Tablet and mobile layouts are being tuned for early testers.</figcaption>
+          <figcaption>Desktop dashboard preview. Tablet and mobile layouts will carry the same cash-flow-first experience.</figcaption>
         </figure>
-        <div class="section-copy">
-          <p class="eyebrow">The Product</p>
-          <h2>A clear cash flow dashboard for life between paydays.</h2>
+        <div class="section-copy product-copy">
+          <p class="eyebrow">Your cash flow, clearly</p>
+          <h2>See exactly what is safe to spend before the next payday.</h2>
           <p>
-            Wayledger starts as a responsive web app for desktop, tablet, and phone. It brings income, scheduled bills, debt pressure, savings goals, and trip-related costs into one practical view.
+            Bring income, upcoming bills, debt payments, campground fees, fuel, groceries, repairs, and savings goals into one dashboard that shows your real cash flow.
           </p>
           <ul class="plain-list">
-            <li>Cash flow and pay-window visibility</li>
-            <li>Scheduled bills and recurring expenses</li>
-            <li>Debt pressure and next-payment context</li>
-            <li>Savings goals and travel-aware categories</li>
+            <li>Know what is already committed</li>
+            <li>See bills before they surprise you</li>
+            <li>Track debt without losing sight of cash flow</li>
+            <li>Separate travel costs from normal household spending</li>
+            <li>Compare what different locations actually cost</li>
           </ul>
         </div>
       </section>
-      <section class="section workflow-section">
-        <div class="section-copy">
-          <p class="eyebrow">How Access Will Work</p>
-          <h2>Visitors become testers, then subscribers.</h2>
+
+      <section class="section audience-section">
+        <div class="section-heading center">
+          <p class="eyebrow">Made for real travelers</p>
+          <h2>Built for households whose budget moves.</h2>
+          <p>Whether you travel full-time or seasonally, Wayledger adapts to how you live and get paid.</p>
         </div>
-        <div class="workflow">
+        <div class="audience-grid">
+          <article><img class="site-icon audience-icon" src="./assets/icons/ui/full-time-rv.svg" alt="" aria-hidden="true" /><strong>Full-time<br />RV families</strong></article>
+          <article><img class="site-icon audience-icon" src="./assets/icons/ui/part-time-rv.svg" alt="" aria-hidden="true" /><strong>Part-time<br />RV travelers</strong></article>
+          <article><img class="site-icon audience-icon" src="./assets/icons/ui/snowbirds.svg" alt="" aria-hidden="true" /><strong>Snowbirds</strong></article>
+          <article><img class="site-icon audience-icon" src="./assets/icons/ui/travel-nurse.svg" alt="" aria-hidden="true" /><strong>Travel<br />nurses</strong></article>
+          <article><img class="site-icon audience-icon" src="./assets/icons/ui/military.svg" alt="" aria-hidden="true" /><strong>Military<br />families</strong></article>
+          <article><img class="site-icon audience-icon" src="./assets/icons/ui/digital-nomad.svg" alt="" aria-hidden="true" /><strong>Digital<br />nomads</strong></article>
+        </div>
+      </section>
+
+      <section id="how" class="section how-section">
+        <div class="section-heading center">
+          <p class="eyebrow">Simple by design</p>
+          <h2>How Wayledger works</h2>
+        </div>
+        <div class="steps-grid">
           <article>
-            <span>Step 1</span>
-            <h3>Join the early list</h3>
-            <p>Interested users submit contact details and a few notes about how they manage road-life finances.</p>
+            <span class="step-number">1</span>
+            <img class="site-icon feature-icon-img" src="./assets/icons/ui/income-paydays.svg" alt="" aria-hidden="true" />
+            <h3>Add income and paydays</h3>
+            <p>Set up your pay schedule so cash flow matches your real life.</p>
           </article>
           <article>
-            <span>Step 2</span>
-            <h3>Tester invite</h3>
-            <p>Approved testers get access to the hosted web app and provide feedback while core workflows are refined.</p>
+            <span class="step-number">2</span>
+            <img class="site-icon feature-icon-img" src="./assets/icons/ui/bills-expenses.svg" alt="" aria-hidden="true" />
+            <h3>Add bills and planned expenses</h3>
+            <p>Include bills, debt payments, groceries, subscriptions, and savings goals.</p>
           </article>
           <article>
-            <span>Step 3</span>
-            <h3>Paid launch</h3>
-            <p>Subscriptions will open after early testers validate the product, onboarding, support needs, and data setup.</p>
+            <span class="step-number">3</span>
+            <img class="site-icon feature-icon-img" src="./assets/icons/ui/rv.svg" alt="" aria-hidden="true" />
+            <h3>Track travel costs</h3>
+            <p>See the true cost of your trips, routes, and destinations.</p>
+          </article>
+          <article>
+            <span class="step-number">4</span>
+            <img class="site-icon feature-icon-img" src="./assets/icons/ui/shield-check.svg" alt="" aria-hidden="true" />
+            <h3>See what is safe to spend</h3>
+            <p>Know your cushion and make confident decisions between paydays.</p>
           </article>
         </div>
       </section>
 
-      <section id="plans" class="section plans-section">
-        <div class="section-copy">
-          <p class="eyebrow">Plans</p>
-          <h2>Start free with testers, then launch with simple pricing.</h2>
-          <p>
-            Wayledger should cost less than broad personal-finance tools while the first version focuses on road-life cash flow instead of bank automation.
-          </p>
+      <section id="pricing" class="section pricing-section">
+        <div class="section-heading center">
+          <p class="eyebrow">Join us early</p>
+          <h2>Join early while Wayledger is being shaped around real travelers.</h2>
         </div>
-        <article class="plan-card">
-          <span>Now</span>
-          <strong>Early Access</strong>
-          <div class="price-line">Free</div>
-          <p>Free tester group for product validation, feedback, and onboarding research.</p>
-          <a class="secondary-button" href="#early-access">Join the List</a>
-        </article>
-        <article class="plan-card featured">
-          <span>Target Launch Price</span>
-          <strong>Wayledger Core</strong>
-          <div class="price-line">$7/mo <small>or $70/yr</small></div>
-          <p>One household, web dashboard access, recurring planning, category tracking, debt pressure, and trip-aware cash flow.</p>
-          <a class="primary-button" href="#early-access">Get Notified</a>
-        </article>
+        <div class="pricing-cards">
+          <article class="price-card">
+            <strong>Early Access</strong>
+            <div class="price-line">Free</div>
+            <p>Help shape Wayledger and get exclusive early access.</p>
+            <ul class="check-list">
+              <li>Preview new features and updates</li>
+              <li>Give feedback and vote on ideas</li>
+              <li>Early invites and special access</li>
+            </ul>
+            <a class="secondary-button" href="#early-access">Join the Waitlist</a>
+          </article>
+          <article class="price-card featured">
+            <strong>Wayledger Core</strong>
+            <div class="price-line">$7/mo <small>or $70/yr (save $14)</small></div>
+            <p>Everything you need to run your cash flow between paydays.</p>
+            <ul class="check-list">
+              <li>Pay-window cash flow planning</li>
+              <li>Hosted dashboard access</li>
+              <li>Trip-aware categories and tracking</li>
+              <li>Scheduled bills and expenses</li>
+            </ul>
+            <a class="primary-button" href="#early-access">Get Early Access</a>
+          </article>
+        </div>
       </section>
 
-      <section id="early-access" class="cta-section">
-        <div>
-          <p class="eyebrow">Early Access</p>
-          <h2>Help shape Wayledger before public launch.</h2>
-          <p>
-            Early requests will be collected with a free Google Form and sent to the Wayledger contact inbox.
-          </p>
+      <section id="faq" class="section faq-section">
+        <div class="section-heading center">
+          <p class="eyebrow">Questions answered</p>
+          <h2>Answers before you join.</h2>
+        </div>
+        <div class="faq-list compact-faq">
+          <details>
+            <summary>What is Wayledger?</summary>
+            <p>Wayledger is a cash flow planning app for travelers, RV families, and mobile households.</p>
+          </details>
+          <details>
+            <summary>Who is it for?</summary>
+            <p>It is built for RV families, frequent travelers, snowbirds, travel workers, and anyone planning money around changing locations.</p>
+          </details>
+          <details>
+            <summary>How is it different from a normal budgeting app?</summary>
+            <p>Wayledger focuses on pay windows, scheduled costs, travel expenses, debt pressure, and remaining cushion.</p>
+          </details>
+          <details>
+            <summary>Does it connect to my bank account?</summary>
+            <p>Bank connections are planned for a future release. Manual entry and import-friendly workflows are part of the product direction.</p>
+          </details>
+          <details>
+            <summary>Can I manually add transactions?</summary>
+            <p>Yes. Wayledger is designed to support manual income, expenses, transfers, scheduled payments, and trip costs.</p>
+          </details>
+          <details>
+            <summary>Is Wayledger available yet?</summary>
+            <p>Wayledger is preparing for early access. Join the list for preview invitations and launch updates.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="early-access" class="final-cta-section">
+        <div class="final-bg" aria-hidden="true"></div>
+        <div class="final-copy">
+          <p class="eyebrow">Get Started</p>
+          <h2>Get early access to Wayledger.</h2>
+          <p>Join the list for launch updates, preview invitations, and early-access availability.</p>
+          <ul class="micro-list">
+            <li>No spam. Just updates.</li>
+            <li>Be the first to try new features.</li>
+            <li>Help shape the future of Wayledger.</li>
+          </ul>
         </div>
         <form class="waitlist-form" action="mailto:hello@getwayledger.com" method="post" enctype="text/plain">
-          <label>
-            Name
-            <input name="name" autocomplete="name" required />
-          </label>
-          <label>
-            Email
-            <input name="email" type="email" autocomplete="email" required />
-          </label>
+          <div class="form-row">
+            <label>
+              Name
+              <input name="name" autocomplete="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </label>
+          </div>
           <label>
             What best describes you?
             <select name="profile">
@@ -191,105 +303,12 @@
             </select>
           </label>
           <label>
-            What do you want Wayledger to help with?
-            <textarea name="message" rows="4"></textarea>
+            What is the hardest part of managing money while traveling?
+            <textarea name="message" rows="4" placeholder="Tell us what you're struggling with..."></textarea>
           </label>
           <button class="primary-button" type="submit">Request Early Access</button>
-          <small>Temporary email fallback. Replace with a Google Form endpoint before publishing.</small>
+          <small>We will only use this to contact you about Wayledger access and product updates. Unsubscribe anytime.</small>
         </form>
-      </section>
-
-      <section id="faq" class="section faq-section">
-        <div class="section-copy">
-          <p class="eyebrow">FAQ</p>
-          <h2>Questions people ask before joining.</h2>
-        </div>
-        <div class="faq-list">
-          <details open>
-            <summary>What is Wayledger?</summary>
-            <p>Wayledger is a finance app for people who travel, live on the road, or manage expenses across changing locations. It helps organize income, spending, bills, debt, savings goals, and trip-related costs in one dashboard.</p>
-          </details>
-          <details>
-            <summary>Who is Wayledger for?</summary>
-            <p>Wayledger is designed for RV families, full-time travelers, digital nomads, and households whose budgets shift with fuel, campground stays, repairs, subscriptions, and irregular expenses.</p>
-          </details>
-          <details>
-            <summary>How is Wayledger different from a normal budgeting app?</summary>
-            <p>Most budgeting apps assume fixed monthly spending. Wayledger is built around travel life, where costs change by route, campground, fuel prices, repairs, memberships, groceries, and pay cycles.</p>
-          </details>
-          <details>
-            <summary>Does Wayledger help with pay periods or monthly budgets?</summary>
-            <p>Yes. Wayledger is designed around cash flow windows, so you can see what is coming in, what is already committed, what is flexible, and what should remain before the next income date.</p>
-          </details>
-          <details>
-            <summary>Can I track upcoming bills and scheduled expenses?</summary>
-            <p>Yes. Scheduled items can include campground fees, truck payments, insurance, mobile internet, memberships, subscriptions, propane refills, and other recurring or planned costs.</p>
-          </details>
-          <details>
-            <summary>Does Wayledger track RV-specific expenses?</summary>
-            <p>Yes. Wayledger can organize site fees, fuel, propane, mobile internet, insurance, maintenance, repairs, memberships, and travel supplies alongside everyday spending.</p>
-          </details>
-          <details>
-            <summary>Can I track debt payments?</summary>
-            <p>Yes. Wayledger includes debt tracking so you can monitor upcoming minimum payments, total monthly debt pressure, and how debt payments affect available cash.</p>
-          </details>
-          <details>
-            <summary>What does debt pressure mean?</summary>
-            <p>Debt pressure shows how much of your cash flow is being pulled toward debt payments. It helps you quickly understand whether obligations are manageable or starting to limit flexibility.</p>
-          </details>
-          <details>
-            <summary>Can I track savings goals?</summary>
-            <p>Yes. You can track goals like an emergency fund, travel reserve, maintenance reserve, future homestead fund, or any other goal you want to build over time.</p>
-          </details>
-          <details>
-            <summary>Does Wayledger connect to my bank account?</summary>
-            <p>Not yet. The plan for the live version is to support linked accounts when the product is ready. Wayledger should still be useful whether you enter transactions manually, import data, or connect accounts later.</p>
-          </details>
-          <details>
-            <summary>Can I manually add transactions?</summary>
-            <p>Yes. Wayledger is built to support manual entry for expenses, income, transfers, and planned payments without requiring a bank connection.</p>
-          </details>
-          <details>
-            <summary>Can I categorize spending?</summary>
-            <p>Yes. You can organize spending into categories like fuel, groceries, campground fees, dining, propane, entertainment, insurance, repairs, debt payments, subscriptions, and custom categories.</p>
-          </details>
-          <details>
-            <summary>Does Wayledger show where my money is going?</summary>
-            <p>Yes. The dashboard shows spending by category, recent activity, upcoming scheduled expenses, and cash flow so you can quickly see what is using the most money.</p>
-          </details>
-          <details>
-            <summary>What is the cash flow view?</summary>
-            <p>The cash flow view shows how income is split between committed expenses, flexible spending, savings, reserves, and remaining cash.</p>
-          </details>
-          <details>
-            <summary>Can Wayledger help me avoid running out of money before the next paycheck?</summary>
-            <p>Yes. Wayledger shows remaining cash, upcoming bills, projected cushion, and runway so you can see whether your current spending pace is safe before the next income date.</p>
-          </details>
-          <details>
-            <summary>Can I use Wayledger if I am not an RVer?</summary>
-            <p>Yes. Wayledger is especially useful for RVers and travelers, but it can also help anyone planning trips, vacations, seasonal expenses, or household cash flow around specific dates and goals.</p>
-          </details>
-          <details>
-            <summary>Is Wayledger for business or personal use?</summary>
-            <p>Wayledger is mainly designed for personal and household finance, especially for travel-based lifestyles. Future versions may support more advanced business or tax-focused features.</p>
-          </details>
-          <details>
-            <summary>Can I plan trips inside Wayledger?</summary>
-            <p>Wayledger is not meant to replace a full trip planner. Its trip features focus on the money side of travel, including campground costs, fuel estimates, travel spending, and location-based expenses.</p>
-          </details>
-          <details>
-            <summary>Can I use Wayledger on my phone?</summary>
-            <p>Yes. Wayledger is designed for desktop, tablet, and mobile layouts so you can check your finances from home, the truck, the campground, or wherever you are.</p>
-          </details>
-          <details>
-            <summary>Is my financial information secure?</summary>
-            <p>Wayledger is being designed with privacy and security in mind. Sensitive financial data should be handled carefully, and account connection features should use secure third-party providers when available.</p>
-          </details>
-          <details>
-            <summary>Is Wayledger available yet?</summary>
-            <p>Wayledger is currently in development. Early access, waitlist, and launch details will be shared as the app gets closer to release.</p>
-          </details>
-        </div>
       </section>
     </main>
 
