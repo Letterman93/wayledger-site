@@ -52,25 +52,26 @@
             </div>
           </div>
 
-          <aside class="period-card" aria-label="Example pay period calendar">
+          <aside class="period-card" aria-label="Example pay window calendar">
             <div class="period-head">
-              <strong>This Pay Period</strong>
-              <span>14 days remaining</span>
+              <strong>Pay Window</strong>
+              <span class="period-range">Apr 15 - Apr 28</span>
+              <span class="remaining-days">12 days left</span>
             </div>
             <div class="calendar-weekdays" aria-hidden="true">
               <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
             </div>
             <div class="calendar-grid hero-calendar">
-              <span class="muted-day">27</span><span class="muted-day">28</span><span class="muted-day">29</span><span class="muted-day">30</span><span>1</span><span>2</span><span>3</span>
-              <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
-              <span>11</span><span>12</span><span>13</span><span>14</span><span class="payday">15</span><span>16</span><span>17</span>
-              <span class="window-day bill-day">18</span><span class="window-day bill-day">19</span><span class="window-day bill-day">20</span><span class="window-day">21</span><span class="window-day bill-day">22</span><span class="window-day">23</span><span class="window-day">24</span>
-              <span class="window-day">25</span><span class="window-day">26</span><span class="window-day bill-day">27</span><span class="window-day">28</span><span class="window-day">29</span><span class="window-day bill-day">30</span><span class="window-day">31</span>
+              <span class="muted-day no-event">29</span><span class="muted-day no-event">30</span><span class="muted-day no-event">31</span><span class="no-event">1</span><span class="no-event">2</span><span class="no-event">3</span><span class="no-event">4</span>
+              <span class="no-event">5</span><span class="no-event">6</span><span class="bill-event">7</span><span class="travel-event travel-start">8</span><span class="travel-event travel-mid">9</span><span class="travel-event travel-mid">10</span><span class="travel-event travel-end">11</span>
+              <span class="no-event">12</span><span class="no-event">13</span><span class="no-event">14</span><span class="payday-event window-day">15</span><span class="window-day window-past no-event">16</span><span class="today-day window-day no-event">17</span><span class="window-day bill-event">18</span>
+              <span class="window-day bill-event">19</span><span class="window-day bill-event">20</span><span class="window-day no-event">21</span><span class="window-day bill-event">22</span><span class="window-day no-event">23</span><span class="window-day no-event">24</span><span class="window-day no-event">25</span>
+              <span class="window-day no-event">26</span><span class="window-day bill-event">27</span><span class="window-day no-event">28</span><span class="next-payday travel-event travel-start multi-event"><b>29</b><i class="event-stack" aria-hidden="true"><i class="stack-payday"></i><i class="stack-travel"></i></i></span><span class="muted-day bill-event travel-event travel-mid">30</span><span class="muted-day next-month travel-event travel-end">1</span><span class="muted-day next-month no-event">2</span>
             </div>
             <div class="period-stats">
               <div><span>Income</span><strong>$5,450</strong></div>
-              <div><span>Scheduled</span><strong class="warn">$2,880</strong></div>
-              <div><span>Cushion</span><strong>$2,570</strong></div>
+              <div><span>Bills Due</span><strong class="warn">$2,880</strong></div>
+              <div><span>Runway</span><strong>$2,570</strong></div>
             </div>
           </aside>
         </div>
@@ -199,7 +200,7 @@
             <span class="step-number">4</span>
             <img class="site-icon feature-icon-img" src="./assets/icons/ui/shield-check.svg" alt="" aria-hidden="true" />
             <h3>See what is safe to spend</h3>
-            <p>Know your cushion and make confident decisions between paydays.</p>
+            <p>Know your runway and make confident decisions between paydays.</p>
           </article>
         </div>
       </section>
@@ -223,7 +224,7 @@
           </article>
           <article class="price-card featured">
             <strong>Wayledger Core</strong>
-            <div class="price-line">$7/mo <small>or $70/yr (save $14)</small></div>
+            <div class="price-line"><span class="monthly-price">$8<span>/mo</span></span><small>$79/yr <em>save $17</em></small></div>
             <p>Everything you need to run your cash flow between paydays.</p>
             <ul class="check-list">
               <li>Pay-window cash flow planning</li>
@@ -252,7 +253,7 @@
           </details>
           <details>
             <summary>How is it different from a normal budgeting app?</summary>
-            <p>Wayledger focuses on pay windows, scheduled costs, travel expenses, debt pressure, and remaining cushion.</p>
+            <p>Wayledger focuses on pay windows, scheduled costs, travel expenses, debt pressure, and remaining runway.</p>
           </details>
           <details>
             <summary>Does it connect to my bank account?</summary>
@@ -261,6 +262,18 @@
           <details>
             <summary>Can I manually add transactions?</summary>
             <p>Yes. Wayledger is designed to support manual income, expenses, transfers, scheduled payments, and trip costs.</p>
+          </details>
+          <details>
+            <summary>Can I use Wayledger on my phone?</summary>
+            <p>Yes. Wayledger is being designed for desktop, tablet, and mobile so you can check your cash flow from home, the truck, or the campground.</p>
+          </details>
+          <details>
+            <summary>Can I plan trips inside Wayledger?</summary>
+            <p>Wayledger focuses on the money side of travel, including campground costs, fuel estimates, travel spending, and location-based expenses.</p>
+          </details>
+          <details>
+            <summary>Is my financial information secure?</summary>
+            <p>Wayledger is being built with privacy in mind. Sensitive data should be handled carefully, and future account connections should use secure providers.</p>
           </details>
           <details>
             <summary>Is Wayledger available yet?</summary>
