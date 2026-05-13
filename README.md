@@ -17,9 +17,9 @@ Public landing website for Wayledger at getwayledger.com.
 - Personal finance data
 - Secrets or API keys
 
-## Local Preview
+## Preview
 
-Open index.html directly in a browser, or serve this folder with any static file server.
+You may view this website by going to www.getwayledger.com in a broswer. For local preview, open index.html directly in a browser, or serve this folder with any static file server.
 
 ## Deploy
 
